@@ -1,4 +1,4 @@
-const bg = document.querySelector('.bg')
+const video = document.querySelector('#video')
 const loadingText = document.querySelector('.loading-text')
 
 let load = 0
@@ -15,7 +15,7 @@ function blurring() {
     }
     loadingText.innerText = `${load}%`
     loadingText.style.opacity = scale(load, 0, 100, 1, 0)
-    bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`
+    video.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`
     console.log(load)
 
 }
